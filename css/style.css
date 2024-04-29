@@ -28,12 +28,9 @@ button i {
     margin-right: 10px;
     margin-bottom: 5px;
     padding: 5px;
- }
-.color-logo {
-    font-weight: 400;
-    font-size: 30px;
-    color: rgb(195, 226, 212);
     padding-left: 2px;
+    font-size: 27px;
+    color: rgb(195, 226, 212);
  }
 .nav-link {
     transition: all 0.7s;
@@ -58,7 +55,7 @@ main {
 }
 
 /* titulo_Buscador */
-
+ 
 main .buscador {
     height: 600px;
     background-image: url("../img/fondo-arbol.jpg");
@@ -103,7 +100,7 @@ main .buscador {
     color:rgb(53, 72, 58);
 }
 
-
+/*AGREGAR MEDIA QUERYS CON FUNCIONES DE SASS !!!*/
 @media screen and (max-width: 995px) {
     .buscador .buscador_title h3 {
         left: 40%;
@@ -196,6 +193,7 @@ main .tarjeta_container div a {
     padding-left: 80px;
     padding-right: 80px;
 }
+/*AGREGAR MEDIA Q CON FUNCIONES DE SASS !!!*/
 @media screen and (max-width:520px) {
     main .tarjeta_container div img{
         width: 300px;
@@ -254,7 +252,7 @@ main section iframe {
 }
 hr {
     width: 70%;
-    color: rgb(195, 226, 212);;
+    color: rgb(195, 226, 212);
 }
 .texto_contenedor a:hover {
     display: inline-block;
@@ -264,6 +262,8 @@ hr {
     -webkit-box-shadow: 9px 11px 7px -2px rgba(25,17,17,0.48);
     -moz-box-shadow: 9px 11px 7px -2px rgba(25,17,17,0.48);
 }
+
+/*AGREGAR MEDIA Q CON FUNCIONES DE SASS !!!*/
 
 @media screen and (max-width: 1456px) {
     main .video-empresa iframe {

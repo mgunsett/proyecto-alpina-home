@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'voltaire', sans-serif;
+}
+// List
+$bg-main: linear-gradient(to bottom, rgba(93, 137, 93, 0.808) 0%, rgb(78, 120, 78) 100%);
+$color-1: rgb(195, 226, 212);
+$color-2: rgba(104, 174, 121, 0.54);
+//Extend
+%h1-text{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(195, 226, 212);
+    padding: 30px;
+    font-weight: 600;
+}
+
+/*!-----HEADER-----*/
+header{
+    .color-menu{
+        background: rgb(105, 150, 105);
+        opacity: 0.9;
+        margin-bottom: 25px;
+        .color-icon {
+            box-shadow: none;
+        }
+        button{
+            i{
+                font-size: 30px;
+                color: rgb(174, 215, 180);
+            }
+        }
+        .color-item{
+                a{
+                    font-weight: 400;
+                    font-size: 17px;
+                    color: rgb(195, 226, 212);
+                    text-decoration: none;
+                    transition: all 0.7s;
+                    &:hover{
+                        font-size: 22px;
+                        color: rgb(205, 231, 219);
+                    }
+                }
+            }
+        .color-logo{
+            text-decoration: none;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            padding: 5px;
+            padding-left: 2px;
+            font-size: 27px;
+            color: rgb(195, 226, 212);
+        }
+        .navbar-brand{
+            transition: all 0.7s;
+            &:hover{
+                font-size: 35px;
+                color: rgb(205, 231, 219);
+            }
+        }
+    }    
+}
+.separador_{
+    background:  rgb(195, 238, 195);
+    height: 10px;  
+}
+/*!--- FOOTER | section --- */
+footer {
+    background: rgb(105, 150, 105);
+    iframe {  /* Mapa */
+        height: 220px;
+        width: 250px;
+        border-radius: 15px;
+    }
+    .fieldset { /* Newsletter */
+        border-radius: 15px;
+        border: 2px solid rgb(195, 238, 195);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:center;
+        height: 220px;
+        p {
+            color: rgb(195, 238, 195);
+            font-size: 25px;
+            text-align: center;
+        }
+        input {
+            border-radius: 5px;
+            padding: 5px;
+            margin: 10px;
+        }
+        .boton-col {
+            border-radius: 5px;
+            color: rgb(195, 238, 195);
+            padding-bottom: 5px;
+        }
+    }
+    .list_container2 { /* web site */
+        width: 200px;
+        h3 {
+            color: rgb(195, 238, 195);
+            font-size: 25px;
+            font-weight: 100;
+        }
+        ul {
+            padding-top: 5px;
+            padding-left: 0;
+            color:black;
+            li {
+                padding: 8px;
+                list-style: none;
+                a { 
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: black;
+                    transition: all 0.2s;
+                    &:hover {
+                        color: rgb(183, 237, 185);
+                    }
+                }
+            }
+        }
+
+    }
+    .list_container { /* Contactanos */
+        width: 350px;
+        h3 {
+            color: rgb(195, 238, 195);
+            font-size: 25px;
+            font-weight: 100;
+        }
+        ul {
+            padding-top: 5px;
+            padding-left: 0;
+            color:black;
+            li {
+                padding: 8px;
+                list-style: none;
+                i {
+                    text-decoration: none;
+                    margin-right: 10px;
+                    font-size: 20px; 
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+        }
+    }
+    .list_redes {  /* Redes */  
+        h3 {
+            color: rgb(195, 238, 195);
+            font-size: 25px;
+            font-weight: 100;
+        }
+        ul {
+            padding-left: 0;
+            list-style: none;
+            li {
+                padding-top: 15px;
+                list-style: none;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    transition: all 0.5s;
+                    &:hover {
+                        width: 33px;
+                        height: 33px;
+                    }
+                }
+            }
+        }
+    }
+    .final {  /*  Txto final  */
+        color: rgb(195, 238, 195);
+        font-size: 15px;
+        font-weight: 100;
+        text-align: center;
+        padding-top: 10px;
+        i {
+            font-size: 25px;
+            color: rgb(224, 177, 88);
+        }
+    }
+}
+

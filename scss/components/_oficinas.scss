@@ -1,0 +1,67 @@
+ /*? --- OFICINAS | page ---*/
+main {
+    .oficina-container {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 500px;
+        gap: 10px;
+        .oficina_1 { grid-column: span 2; }
+        .oficina_4 { grid-row: span 2; }
+        .oficina_5 { grid-column: span 2; }
+        .oficina_8 { grid-column: span 2; }
+        div {
+            position: relative;
+            padding: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 8px 5px 22px 0px rgba(0,0,0,0.7);
+                -webkit-box-shadow: 8px 5px 22px 0px rgba(0,0,0,0.7);
+                -moz-box-shadow: 8px 5px 22px 0px rgba(0,0,0,0.7);   
+                transition: all 0.8s;
+                &:hover {
+                    box-shadow: -1px 4px 14px 3px rgba(255,255,255,0.75);   
+                    -webkit-box-shadow: -1px 4px 14px 3px rgba(255,2550,255,0.75);
+                    -moz-box-shadow: -1px 4px 14px 3px rgba(255,255,255,0.75);
+                }
+            }
+            p {
+                align-items: center;
+                color: rgba(245, 245, 245, 0.816);
+                font-size: 30px;
+                font-weight: 400;
+                padding: 10px;
+                position: absolute;
+                bottom: 10%;
+                left: 0;
+                background-color: rgba(84, 123, 84, 0.423);
+            }
+        }
+        .list_ofi {
+            ul {
+                padding-top: 5px;
+                padding-left: 0;
+                li {
+                    padding-top: 27px;
+                    padding: 8px;
+                    list-style: none;
+                    i {
+                        text-decoration: none;
+                        margin-right: 10px;
+                        font-size: 20px; 
+                    }
+                    a {
+                        color: rgb(195, 238, 195);
+                        text-decoration: none;
+                        font-size: 20px;
+                        strong {
+                            color: rgb(28, 35, 29);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

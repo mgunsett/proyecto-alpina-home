@@ -1,0 +1,37 @@
+main {
+    .tarjeta_container {
+        padding-top: 5%;
+        .fondo-prop {
+            height: 500px;
+            background-image: url("../img/fondo-mad.jpg");
+            background-repeat:repeat;
+            background-size:contain;
+            background-position:center;
+            @include flex (flex,center,center,column,wrap);
+            .clase-search {
+                width: 400px;
+                transition: all 0.9s;
+            }   
+        }
+        .color-card {
+            background:rgb(212, 229, 221);
+            width: 280px;
+            a {
+                transition: all 0.5s;
+                &:hover {
+                    color: #212529 !important;
+                    background-color: #FFC107;
+                    border: none;
+                }
+            }
+        }
+        .carta-hor {
+            background:rgb(195, 226, 212);
+            opacity: 0.8;
+            width: 90%;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

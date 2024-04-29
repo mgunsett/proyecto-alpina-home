@@ -1,0 +1,27 @@
+/*? --- LAEMPRESA | page ---*/
+main {
+    .empresa_ {
+        padding-top: 130px;
+        padding-bottom: 160px;
+        .carru_img {
+            width: 550px;
+            height: 680px;
+            object-fit: cover;
+        }
+        .text_empresa {
+            width: 550px;
+            height: 700px;
+            h3 {
+                color: rgb(195, 238, 195);
+                font-size: 60px; 
+            }
+            p {
+                font-size: 22px;
+            }
+            hr {
+                width: 70%;
+                color: rgb(195, 226, 212);
+            }
+        }
+    }
+}

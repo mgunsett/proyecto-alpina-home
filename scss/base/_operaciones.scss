@@ -1,0 +1,18 @@
+//Mixin
+@mixin flex ($flex, $justify, $aling, $direction, $wrap){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+//Condicional
+@mixin click($click){
+    @if $click== black{
+        color: $color-2;
+    }@else {
+        color: $color-1;
+    }
+}
+
+/*Senti q todavia no le pude sacar bien el jugo al condicional */

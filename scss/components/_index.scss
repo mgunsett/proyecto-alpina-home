@@ -1,0 +1,133 @@
+/*!----- MAIN | SECTION -----*/
+main {
+    background: $bg-main;
+    padding-bottom: 60px;
+    .buscador {
+        height: 650px;
+        background-image: url("../img/fondo-arbol.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        .buscador_title {
+            display: flex;
+            justify-content: center;
+            flex: column wrap;
+            align-items: center;
+            position: relative;
+            padding-top: 8%;
+            div {
+                text-align: center;
+                font-size: 80px;
+                padding: 5px;
+                a {
+                    text-decoration: none;
+                    color: rgb(169, 199, 182);
+                    text-align: center;
+                    font-size: 250px;
+                    font-weight: 600; 
+                }
+            }
+            p {
+                background: rgba(104, 174, 121, 0.54);
+                text-align: center;
+                color: $color-1;
+                font-size: 90px;
+                position: absolute;
+                left: 43%;
+                bottom: 23%;
+                width: 210px;
+            }
+        }
+    }
+    /*--- section_TARJETAS ---*/
+    .tarjeta_container {
+        padding-bottom: 40px;
+        h1 {
+            @extend %h1-text;
+            padding: 3px;
+        }
+        .propiedad_{
+            @include flex(flex, space-evenly, center, row, wrap);
+            padding: 30px;
+            .propiedad_foto{
+                @include flex(flex, space-around, center, column, wrap);
+                img {
+                    width: 400px;
+                    height: 480px;  
+                    transition: all 0.5s;
+                    &:hover {
+                        border: 5px solid transparent;
+                        border-image: linear-gradient( #d1d7d2ce 0%, #7cbe95 100%) 1;
+                    }
+                }
+                p { 
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.567);
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    background: $color-1;
+                    color: black;
+                    padding: 10px;
+                    border-radius: 5px 5px;
+                    transition: all 0.9s;
+                    &:hover {
+                        padding-left: 80px;
+                        padding-right: 80px;
+                    }
+                }
+            }
+        }
+    }
+    /*----- section_VIDEO ------*/
+    .separador {
+        background: rgb(5, 5, 5);
+        opacity: 0.4;
+        padding: 15px;
+        h1 {
+            @extend %h1-text;
+        }
+    }
+    .video-empresa {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 80px 50px;
+        iframe {
+            padding: 10px;
+            width: 753px;
+            height: 425px;
+        }
+        .texto_contenedor {
+            width: 600px;
+            height: 400px;
+            p {
+                font-size: 27px;
+                font-weight: 100;
+                padding-top: 15px;
+                strong {
+                    @include click (yellow);  
+                }
+            }
+            a {
+                font-family: "Reenie Beanie", cursive;
+                text-decoration: none;
+                color: $color-1;
+                font-size: 40px;
+                padding: 2px;
+                transition: all 0.7s;
+                &:hover {
+                    font-size: 43px;
+                    color: #def8fc;
+                }
+            }
+            hr {
+                width: 70%;
+                color: $color-1;
+            }
+        }
+    }
+}
