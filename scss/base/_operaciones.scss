@@ -16,3 +16,43 @@
 }
 
 /*Senti q todavia no le pude sacar bien el jugo al condicional */
+
+//Animaciones
+main .buscador .buscador_title {
+    #difum-title {
+        animation: caida-tit, difum-tit;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+    }
+    p {
+        animation: difum-tit ;
+        animation-duration: 2.5s;
+        animation-delay: 0.7s;
+        animation-timing-function:linear;
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes caida-tit {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(100px);
+    }
+}
+@keyframes difum-tit {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}

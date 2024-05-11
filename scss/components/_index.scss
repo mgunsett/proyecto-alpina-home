@@ -3,7 +3,7 @@ main {
     background: $bg-main;
     padding-bottom: 60px;
     .buscador {
-        height: 650px;
+        height: 810px;
         background-image: url("../img/fondo-arbol.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -12,31 +12,27 @@ main {
         .buscador_title {
             display: flex;
             justify-content: center;
-            flex: column wrap;
+            flex-direction: column;
+            flex-wrap: wrap;
             align-items: center;
             position: relative;
             padding-top: 8%;
-            div {
+            a { 
+                text-decoration: none;
+                color: rgb(169, 199, 182);
                 text-align: center;
-                font-size: 80px;
-                padding: 5px;
-                a {
-                    text-decoration: none;
-                    color: rgb(169, 199, 182);
-                    text-align: center;
-                    font-size: 250px;
-                    font-weight: 600; 
-                }
+                font-size: 200px;
+                font-weight: 600; 
             }
             p {
-                background: rgba(104, 174, 121, 0.54);
                 text-align: center;
-                color: $color-1;
+                color: rgb(219, 145, 7);
                 font-size: 90px;
                 position: absolute;
-                left: 43%;
-                bottom: 23%;
-                width: 210px;
+                left: 45%;
+                top: 73%;
+                opacity: 0;
+                transition: opacity 0.7s linear 0.8s;
             }
         }
     }
@@ -45,38 +41,74 @@ main {
         padding-bottom: 40px;
         h1 {
             @extend %h1-text;
-            padding: 3px;
+            padding: 30px;
         }
         .propiedad_{
             @include flex(flex, space-evenly, center, row, wrap);
             padding: 30px;
             .propiedad_foto{
-                @include flex(flex, space-around, center, column, wrap);
+                @include flex(flex, space-evenly, center, column, wrap);
+                padding-bottom: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.571);
+                border-bottom-right-radius: 50px;
+                border-top-left-radius: 50px;
                 img {
                     width: 400px;
-                    height: 480px;  
-                    transition: all 0.5s;
+                    height: 460px;  
+                    border-top-left-radius: 50px;
+                    object-view-box: inset(0% 0% 0% 0%);
+                    transition: all 0.9s;
                     &:hover {
-                        border: 5px solid transparent;
-                        border-image: linear-gradient( #d1d7d2ce 0%, #7cbe95 100%) 1;
+                        object-view-box:inset(5% 5% 5% 5%);
                     }
                 }
+                hr {
+                    color: black;
+                    width: 60px;
+                    margin: 0;
+                }
                 p { 
+                    margin: 10px;
                     font-size: 30px;
                     font-weight: 400;
-                    color: rgba(0, 0, 0, 0.567);
+                    color: rgba(0, 0, 0, 0.937);
+                }
+                .ubication {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    flex-wrap: wrap;
+                    gap: 2px;
+                    margin: 2px;
+                    i {
+                        font-size: 20px;
+                        color: $color-1;
+                        padding: 5px;
+                        text-align:left;
+                        margin:auto;
+                    }
+                    p {
+                        font-size: 20px;
+                        padding: 5px;
+                        text-align: left;
+                        color:rgba(0, 0, 0, 0.689) ;
+                    }
                 }
                 a {
                     text-decoration: none;
                     font-size: 20px;
-                    background: $color-1;
-                    color: black;
-                    padding: 10px;
+                    background: rgb(0, 0, 0);
+                    color: rgb(255, 193, 7);
+                    padding: 12px;
                     border-radius: 5px 5px;
                     transition: all 0.9s;
-                    &:hover {
+                    &:hover { 
                         padding-left: 80px;
                         padding-right: 80px;
+                    }
+                    &:active {
+                        background-color: rgb(255, 193, 7);
+                        color: black;
                     }
                 }
             }
@@ -84,11 +116,15 @@ main {
     }
     /*----- section_VIDEO ------*/
     .separador {
-        background: rgb(5, 5, 5);
-        opacity: 0.4;
         padding: 15px;
         h1 {
             @extend %h1-text;
+        }
+        hr {
+            color: rgb(109, 167, 61);
+            width: 80px;
+            height: 4px;
+            margin: auto;
         }
     }
     .video-empresa {
@@ -118,10 +154,14 @@ main {
                 color: $color-1;
                 font-size: 40px;
                 padding: 2px;
-                transition: all 0.7s;
+                i {
+                    opacity: 0;
+                    transition: all 1.7s;
+                }
                 &:hover {
-                    font-size: 43px;
-                    color: #def8fc;
+                    i {
+                        opacity: 1;
+                    }
                 }
             }
             hr {

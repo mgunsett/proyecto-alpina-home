@@ -45,7 +45,7 @@
                                 aria-expanded="false">
                                 PROPIEDADES
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu color-sub">
                                 <li><a class="dropdown-item" href="#">VENTA</a></li>
                                 <li><a class="dropdown-item" href="#">ALQUILER</a></li>
                                 <li><a class="dropdown-item" href="#">ALQUILER TEMPORARIO</a>
@@ -69,11 +69,12 @@
     <main>
         <section class="tarjeta_container">
             <div class="fondo-prop">
-                <h1 class="prop_tit">PROPIEDADES</h1>
+                <h1 class="prop-tit">PROPIEDADES</h1>
                 <div class="input-group mx-auto clase-search">
-                    <input type="text" class="form-control" placeholder="Qué estas buscan   do?"
+                    <input type="text" class="form-control" placeholder="Qué estas buscando?"
                         aria-label="Qué estas buscando?" aria-describedby="input-group-button-right">
-                    <button type="button" class="btn btn-outline-secondary" id="input-group-button-right">¿?</button>
+                    <button type="button" class="btn btn-outline boton-search" id="input-group-button-right"><i
+                            class="bi bi-search"></i></button>
                 </div>
             </div>
             <div class="d-flex justify-content-evenly flex-wrap p-md-5 p-2 m-md-auto m-auto div-card">
@@ -100,14 +101,15 @@
                                 <h5>USD$</h5>
                             </div>
                             <div class="col-8">
-                                <a href="#" class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
+                                <a href="./contacto.html"
+                                    class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="p-2 carta">
                     <div class="card border-0 color-card">
-                        <img src="../img/casa1.jpg" class="card-img-top" alt="casa en bosque">
+                        <img src="../img/casa2.jpg" class="card-img-top" alt="casa en bosque">
                         <div class="card-body mt-md-3 mt-0 mb-3">
                             <div class="row">
                                 <div class="col-10">
@@ -129,14 +131,15 @@
                                 <h5>USD$</h5>
                             </div>
                             <div class="col-8">
-                                <a href="#" class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
+                                <a href="./contacto.html"
+                                    class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="p-2 carta">
                     <div class="card border-0 color-card">
-                        <img src="../img/casa1.jpg" class="card-img-top" alt="...">
+                        <img src="../img/casa3.jpg" class="card-img-top" alt="...">
                         <div class="card-body mt-md-3 mt-0 mb-3">
                             <div class="row">
                                 <div class="col-10">
@@ -156,14 +159,15 @@
                                 <h5>USD$</h5>
                             </div>
                             <div class="col-8">
-                                <a href="#" class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
+                                <a href="./contacto.html"
+                                    class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="p-2 carta">
                     <div class="card border-0 color-card">
-                        <img src="../img/casa1.jpg" class="card-img-top" alt="casa en bosque">
+                        <img src="../img/casa4.jpg" class="card-img-top" alt="casa en bosque">
                         <div class="card-body mt-md-3 mt-0 mb-3">
                             <div class="row">
                                 <div class="col-10">
@@ -184,23 +188,95 @@
                                 <h5>USD$</h5>
                             </div>
                             <div class="col-8">
-                                <a href="#" class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
+                                <a href="./contacto.html"
+                                    class="btn btn-dark w-100 p-3 rounded-0 text-warning">CONSULTAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card m-auto carta-hor">
-                <div class="row p-2 g-0">
-                    <div class="col-mg-5 col-sm-3">
-                        <img src="../img/casa2.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+            <div class="carru-prop d-flex flex-wrap">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
-                    <div class="col-mg-7 col-sm-9">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/img-interior2.jpeg" class="d-block" alt="imagen cocina interior">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>"CAMPUS FOREST"</h5>
+                                <p>Estructuras diseñadas exclusivamente a medida con bases ecologicas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/img-interior3.jpeg" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>"GALA CONCEPT FOREST"</h5>
+                                <p>La comodidad, el estilo contemporaneo, la experiencia y el disfrute de
+                                    palpar la NATURALEZA.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/img-interior4.jpeg" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>"GOD GOOD COUNTRYs"</h5>
+                                <p>Un despertar rodeado del AIRE fortelalecedor de las montañas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="tit-prop2">
+                <h2>OPORTUNIDADES</h2>
+                <p>Countrys / Bosques / Naturaleza</p>
+                <hr>
+            </div>
+            <div class="card m-auto carta-hor">
+                <div class="row p-2 g-0 carta">
+                    <div class="col-mg-4 col-sm-3 g-2">
+                        <img src="../img/img-horiz1.jpg" class="img-fluid w-100" alt="img espacios casa interiores">
+                    </div>
+                    <div class="col-mg-4 col-sm-3 g-2">
+                        <img src="../img/img-horiz2.jpg" class="img-fluid w-100" alt="img espacios casa interiores">
+                    </div>
+                    <div class="col-mg-4 col-sm-3 g-2">
+                        <img src="../img/img-horiz3.jpg" class="img-fluid w-100" alt="img espacios casa interiores">
+                    </div>
+                    <div class="col-mg-4 col-sm-3 g-2">
+                        <img src="../img/img-horiz4.jpg" class="img-fluid w-100" alt="img espacios casa interiores">
+                    </div>
+                    <div class="col-mg-4 col-sm-8">
+                        <div class="card-body carta-text d-flex flex-column f-wrap">
+                            <h5 class="card-title">Country's Club "The Gunsett"</h5>
+                            <p class="card-text">Un paraiso natural donde todo lo que rodea el hogar son grandes
+                                arboles, arroyos, montañas y por sobre todas las cosas TIERRA.
+                            </p>
+                            <div class="iconos-carta">
+                                <i class="bi bi-geo-alt map"></i>
+                                <p>Los Pastizales 9687 ph</p>
+                                <i class="fi fi-rr-bed-empty"></i>
+                                <p>5</p>
+                                <i class="fi fi-rr-bath bano"></i>
+                                <p>2</p>
+                                <i class="fi fi-rs-trees-alt"></i>
+                                <p>2300m2</p>
+                            </div>
+                            <a href="./contacto.html">QUIERO MAS INFO+</a>
                         </div>
                     </div>
                 </div>
@@ -226,19 +302,19 @@
                 <h3>WEB SITE</h3>
                 <ul>
                     <li>
-                        <a href="#">> Home</a>
+                        <a href="../index.html">> Home</a>
                     </li>
                     <li>
-                        <a href="#">> Empresa</a>
+                        <a href="./laempresa.html">> Empresa</a>
                     </li>
                     <li>
                         <a href="#">> Propiedades</a>
                     </li>
                     <li>
-                        <a href="#">> Oficinas</a>
+                        <a href="./oficinas.html">> Oficinas</a>
                     </li>
                     <li>
-                        <a href="#">> Consulta</a>
+                        <a href="./contacto.html">> Consulta</a>
                     </li>
                 </ul>
             </div>
@@ -265,18 +341,15 @@
             </div>
             <div class="col-lg-2 col-md-4 col-sm-10 d-flex flex-column justify-content-start list_redes ">
                 <h3>REDES</h3>
-                <ul class="d-flex flex-xs-row gap-3">
+                <ul class="d-flex flex-xs-row gap-3 icon-redes">
                     <li>
-                        <a href="http://intagram.com" target="_blank"><img src="../img/instagram.png"
-                                alt="logo-instagram"></a>
+                        <a href="http://intagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="http://twitter.com" target="_blank"><img src="../img/twitter.png"
-                                alt="logo-twitter"></a>
+                        <a href="http://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
                     </li>
                     <li>
-                        <a href="http://linkedin.com" target="_blank"><img src="../img/linkedin.png"
-                                alt="logo-linkedin"></a>
+                        <a href="http://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
                     </li>
                 </ul>
             </div>

@@ -1,8 +1,12 @@
-main {
+ main {
+    margin-top: 0px;
     .tarjeta_container {
-        padding-top: 5%;
+        .prop-tit {
+            color: $color-3;
+            font-size: 70px;
+        }
         .fondo-prop {
-            height: 500px;
+            height: 600px;
             background-image: url("../img/fondo-mad.jpg");
             background-repeat:repeat;
             background-size:contain;
@@ -11,11 +15,27 @@ main {
             .clase-search {
                 width: 400px;
                 transition: all 0.9s;
+                .boton-search {
+                    background-color: $color-2;
+                    color: white;
+                    &:hover {
+                        background-color: rgb(189, 227, 75);
+                        color: black;
+                    }
+                }
             }   
         }
         .color-card {
             background:rgb(212, 229, 221);
             width: 280px;
+            img {
+                height: 360px;
+                object-view-box: inset(0% 0% 0% 0%);
+                transition: all 0.8s;
+                &:hover {
+                    object-view-box:inset(5% 5% 5% 5%);
+                }
+            }
             a {
                 transition: all 0.5s;
                 &:hover {
@@ -25,12 +45,83 @@ main {
                 }
             }
         }
+        .carru-prop {
+            margin: auto;
+            margin-bottom: 30px;
+            width: 90vw;
+            height: 680px;
+            div div {
+                img {
+                    width: 90vw;
+                    height: 680px;
+                }
+                h5 {
+                    color: $color-3;
+                    font-size: 25px;
+                }
+            }
+        }
+        .tit-prop2 {
+            text-align: center;
+            padding: 30px;
+            h2 {
+                color: $color-4;
+                font-size: 50px;
+            }
+            p {
+                color:#14161858;
+                font-size: 20px;
+            }
+            hr {
+                margin: auto;
+                width: 10%;
+                color: $color-2;
+            }
+        }
         .carta-hor {
-            background:rgb(195, 226, 212);
-            opacity: 0.8;
-            width: 90%;
+            background:rgb(0, 0, 0);
+            opacity: 0.9;
+            width: 90vw;
             &:hover {
                 opacity: 1;
+            }
+            .carta div {
+                .carta-text{
+                    width: 500px;
+                    h5 {
+                        color: $color-3;
+                        font-size: 40px;
+                        padding: 10px;
+                    }
+                    p {
+                        color: white;
+                        font-size: 20px;
+                        padding: 10px;
+                        margin: auto;
+                    }
+                    .iconos-carta {
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        i {
+                            margin: auto;
+                            color: $color-4;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: rgb(255, 193, 7);
+                        padding: 12px;
+                        transition: all 0.9s;
+                        &:hover { 
+                            padding-left: 30px; 
+                        }
+                        &:active {
+                            color: white;
+                        }
+                    }
+                }
             }
         }
     }

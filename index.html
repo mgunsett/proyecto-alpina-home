@@ -47,7 +47,7 @@
                                 aria-expanded="false">
                                 PROPIEDADES
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu color-sub">
                                 <li><a class="dropdown-item" href="./page/propiedades.html">VENTA</a></li>
                                 <li><a class="dropdown-item" href="./page/propiedades.html">ALQUILER</a></li>
                                 <li><a class="dropdown-item" href="./page/propiedades.html">ALQUILER TEMPORARIO</a></li>
@@ -70,9 +70,7 @@
     <main>
         <section class="buscador">
             <div class="buscador_title">
-                <div>
-                    <a href="#">ALPINA</a>
-                </div>
+                <a id="difum-title" href="#">ALPINA</a>
                 <p>HOME</p>
             </div>
         </section>
@@ -82,22 +80,62 @@
                 <div class="propiedad_foto">
                     <img src="./img/casa1.jpg" alt="casa en un bosque 1">
                     <p>"CAMPUS FOREST"</p>
+                    <hr>
+                    <div class="ubication">
+                        <i class="bi bi-geo-alt map"></i>
+                        <p>Hipolito Yrigoyen 3524 ph</p>
+                    </div>
+                    <div class="ubication">
+                        <i class="fi fi-rr-bed-empty"></i>
+                        <p>3</p>
+                        <i class="fi fi-rr-bath bano"></i>
+                        <p>2</p>
+                        <i class="fi fi-rs-trees-alt"></i>
+                        <p>1300m2</p>
+                    </div>
                     <a href="#">VER +</a>
                 </div>
                 <div class="propiedad_foto">
                     <img src="./img/casa2.jpg" alt="casa en un bosque 2">
                     <p>"GALA CONCEPT FOREST"</p>
+                    <hr>
+                    <div class="ubication">
+                        <i class="bi bi-geo-alt map"></i>
+                        <p>Boulevar Iriondo 587 ph</p>
+                    </div>
+                    <div class="ubication">
+                        <i class="fi fi-rr-bed-empty"></i>
+                        <p>4</p>
+                        <i class="fi fi-rr-bath bano"></i>
+                        <p>3</p>
+                        <i class="fi fi-rs-trees-alt"></i>
+                        <p>1400m2</p>
+                    </div>
                     <a href="#">VER +</a>
                 </div>
                 <div class="propiedad_foto">
                     <img src="./img/casa3.jpg" alt="casa en un bosque 3">
                     <p>"FRANCESCO FOR-EST"</p>
+                    <hr>
+                    <div class="ubication">
+                        <i class="bi bi-geo-alt map"></i>
+                        <p>Los Pastizales 9687 ph</p>
+                    </div>
+                    <div class="ubication">
+                        <i class="fi fi-rr-bed-empty"></i>
+                        <p>5</p>
+                        <i class="fi fi-rr-bath bano"></i>
+                        <p>2</p>
+                        <i class="fi fi-rs-trees-alt"></i>
+                        <p>2300m2</p>
+                    </div>
                     <a href="#">VER +</a>
                 </div>
             </div>
         </section>
         <div class="separador">
             <h1>MY FOREST</h1>
+            <hr>
         </div>
         <section class="video-empresa">
             <iframe src="https://www.youtube.com/embed/h7Pvvi5ulWs" title="Recorrido Propiedad en Bosque"
@@ -112,15 +150,15 @@
                     del HOGAR, sino en la experiencia y el disfrute de palpar la NATURALEZA de cerca.
                 </p>
                 <hr>
-                <a href="./page/propiedades.html">Bienvenido al viaje...</a>
+                <a href="./page/propiedades.html">Bienvenido al viaje <i class="bi bi-airplane"></i></a>
             </div>
         </section>
     </main>
     <div class="separador_"></div>
 
     <!--  FOOTER  -->
-    <footer class="container-fluid p-3 g-3">
-        <div class="row justify-content-lg-between justify-content-sm-evenly p-2 g-4">
+    <footer class="container-fluid p-3 g-4">
+        <div class="row justify-content-lg-between justify-content-md-evenly p-2 g-4">
             <div class="col col-lg-2 col-md-4 col-sm-6 col-xs-10">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4184.846486188586!2d-60.7400180327208!3d-32.9036984036345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1710449591475!5m2!1ses-419!2sar"
@@ -133,23 +171,23 @@
                     <button type="button" class="btn btn-outline-success boton-col">ENVIAR</button>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 list_container2 aling-self-sm-center">
+            <div class="col-lg-2 col-md-4 col-sm-auto list_container2">
                 <h3>WEB SITE</h3>
                 <ul>
                     <li>
                         <a href="#">> Home</a>
                     </li>
                     <li>
-                        <a href="#">> Empresa</a>
+                        <a href="./page/laempresa.html">> Empresa</a>
                     </li>
                     <li>
-                        <a href="#">> Propiedades</a>
+                        <a href="./page/propiedades.html">> Propiedades</a>
                     </li>
                     <li>
-                        <a href="#">> Oficinas</a>
+                        <a href="./page/oficinas.html">> Oficinas</a>
                     </li>
                     <li>
-                        <a href="#">> Consulta</a>
+                        <a href="./page/contacto.html">> Consulta</a>
                     </li>
                 </ul>
             </div>
@@ -176,18 +214,15 @@
             </div>
             <div class="col-lg-2 col-md-4 col-sm-10 d-flex flex-column justify-content-start list_redes ">
                 <h3>REDES</h3>
-                <ul class="d-flex flex-xs-row gap-3">
+                <ul class="d-flex flex-sm-row gap-3 icon-redes">
                     <li>
-                        <a href="http://intagram.com" target="_blank"><img src="./img/instagram.png"
-                                alt="logo-instagram"></a>
+                        <a href="http://intagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="http://twitter.com" target="_blank"><img src="./img/twitter.png"
-                                alt="logo-twitter"></a>
+                        <a href="http://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
                     </li>
                     <li>
-                        <a href="http://linkedin.com" target="_blank"><img src="./img/linkedin.png"
-                                alt="logo-linkedin"></a>
+                        <a href="http://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
                     </li>
                 </ul>
             </div>

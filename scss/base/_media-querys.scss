@@ -1,69 +1,90 @@
 /* Index */
-@media screen and (max-width: 995px) {
-    main .buscador .buscador_title p {
-        left: 40%;
+
+//Titulo
+@media screen and (max-width: 642px) {
+    main .buscador .buscador_title {
+        a { 
+            font-size: 150px; 
+        }
+        p {
+            font-size: 60px;
+            left: 39%;
+            top: 80%;
+        }
     }
 }
-@media screen and (max-width: 736px) {
-    main .buscador .buscador_title div a {
-        font-size: 240px;
-    }
-}  
-@media screen and (max-width: 650px) {
-    main .buscador .buscador_title div a {
-        font-size:170px;
-    }
-    main .buscador .buscador_title p {
-        font-size: 60px;
-        width: 150px;
-        bottom: 22%;
-        left: 37%;
-    }
+@media screen and (max-width: 428px) {
     main .buscador .buscador_title {
-        padding-top: 22%;
+        a { 
+            font-size: 120px; 
+        }
+        p {
+            font-size: 50px;
+            left: 40%;
+            top: 90%;
+        }
     }
 }
-@media screen and (max-width: 470px) {
-    main .buscador .buscador_title div a {
-        font-size:110px;
-    }
+@media screen and (max-width: 360px) {
     main .buscador .buscador_title p {
-        font-size: 30px;
-        width: 90px;
-        bottom: 20%;
-        left: 40%;
-    }
-    main .buscador .buscador_title {
-        padding-top: 32%;
+            left: 37%;
+            top: 88%;
     }
 }
 /* tarjetas page */
-@media screen and (max-width:520px) {
-    main .tarjeta_container .propiedad_ .propiedad_foto img{
-        width: 300px;
-        height: 380px; 
-    }
-    main .tarjeta_container .propiedad_ .propiedad_foto p {
-        font-size: 25px;
-        font-weight: 200;  
-    }
-}
-@media screen and (max-width:370px) {
-    main .tarjeta_container .propiedad_ .propiedad_foto img{
-        width: 250px;
-        height: 320px; 
-        padding-top: 10px;
-    }
-    main .tarjeta_container .propiedad_ .propiedad_foto p {
-        font-size: 17px;
-        font-weight: 100; 
-        padding-top: 5px; 
-    }
-    main .tarjeta_container .propiedad_ .propiedad_foto a {
-        font-size: 15px;
-        padding: 7px;
+
+@media screen and (max-width:1295px) {
+    main .tarjeta_container .propiedad_ .propiedad_foto {
+        img {
+            width: 330px;
+            height: 390px;  
+        }
     }
 }
+@media screen and (max-width:1095px) {
+    main .tarjeta_container .propiedad_ .propiedad_foto {
+        img {
+            width: 290px;
+            height: 350px;  
+        }
+    }
+}
+@media screen and (max-width:970px) {
+    main .tarjeta_container .propiedad_ .propiedad_foto {
+        img {
+            width: 250px;
+            height: 310px;  
+        }
+        p {
+            font-size: 20px;
+        }
+        .ubication {
+            i { font-size: 15px; }
+            p { font-size: 15px; }
+        }
+        a {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width:562px) {
+    main .tarjeta_container .propiedad_ .propiedad_foto {
+        margin-top: 20px;
+        img {
+            width: 330px;
+            height: 350px;  
+        }
+    }
+}
+@media screen and (max-width:380px) {
+    main .tarjeta_container .propiedad_ .propiedad_foto {
+        img {
+            width: 290px;
+            height: 330px;  
+        }
+    }
+}
+
 /* video page */
 @media screen and (max-width: 1456px) {
     main .video-empresa iframe {
@@ -116,23 +137,31 @@
 }
 @media screen and (max-width: 460px) {
     main .video-empresa {
-        padding-left: 20px;
+        padding: 10px;
     }
     main .video-empresa iframe {
-        width: 290px;
-        height: 200px;
+        width: 340px;
+        height: 230px;
     }
     main .video-empresa .texto_contenedor {
         width: 270px;
         height: 250px;
         padding-bottom: 570px;  
-        align-self: center;
-    }
-    main .video-empresa .texto_contenedor p {
-        font-size: 18px ;
+        text-align: center;
+        hr {
+            margin: auto;
+            width: 60%;
+        }
+        p {
+            font-size: 18px;
+        }
     }
     main .video-empresa .texto_contenedor a {
-        font-size: 20px;
+        font-size: 30px;
+        &:hover {
+            font-size: 35px;
+            color: #def8fc;
+        }
     }
 }
 /* footer */
@@ -142,33 +171,53 @@
         width: 250px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     footer div div iframe {
         height: 200px;
-        width: 250px;
+        width: 310px;
     }
-    footer div div fieldset p {
-        font-size: 22px;
+    footer div div .fieldset {
+        margin-bottom: 20px;
+        p {
+            font-size: 22px;
+        }
+        input {
+            font-size: 15px;
+            width: 250px;
+        }
+
     }
-    footer div .list_container h3 {
-        font-size: 22px;
+    footer div .list_container {
+        margin: auto;
+        text-align: center;
+        h3 {
+            font-size: 22px;
+        }
     }
-    footer div .list_container2 h3 {
-        font-size: 22px;
+    footer div .list_container2 {
+        margin: auto;
+        text-align: center;
+        h3{
+            font-size: 22px;
+        }
     }
     footer div .list_container2 ul li a{
+        margin: auto;
         font-size: 15px;
     }
     footer div .list_container ul li {
         a {font-size: 15px;}
         i {font-size: 15px;}
     }
-    footer div .list_redes h3 {
-        font-size: 22px;
+    footer div .list_redes {
+        margin: auto;
+        text-align: center;
+        h3 {
+            font-size: 22px;
+        }
     }
-    footer div .list_redes ul li img {
-        width: 25px;
-        height: 25px;
+    footer div .list_redes .icon-redes {
+        justify-content: center;
     }
 }
 /* la empresa | page */
@@ -176,6 +225,7 @@
     main .empresa_ .carru_img {
             width: 470px;
             height: 590px;
+            margin: auto;
             div div div img {
                 width: 470px;
                 height: 590px;
@@ -191,22 +241,42 @@
     }
 }
 @media screen and (max-width: 490px){
-    main .empresa_ .carru_img {
-            width: 320px;
-            height: 420px;
-            div div div img {
-                width: 370px;
-                height: 470px;
-            }
+    main .empresa_  {
+        padding-top: 70px;
+        .carru_img {
+            width: 450px;
+            height: 400px;
+        }
     }
     main .empresa_ .text_empresa {
-        padding-top: 130px !important;
+        margin-bottom: 120px;
         h3 {
             font-size: 30px;
+            padding-top: 200px;
         }
     }
 }
+@media screen and (max-width: 390px){
+    main .empresa_ .carru_img {
+            width: 460px;
+            height: 380px;
+            div div div img {
+                height: 480px !important;
+            }
+    }
+}
 /* contacto | page */
+@media screen and (max-width: 767px) {
+    main .contacto_ div div{
+        hr {
+            display: inline-block;
+        }
+        .posicion {
+            border-left: 0px;
+            margin-top: 10px;
+        }
+    }
+}
 @media screen and (max-width: 473px) {
     main .contacto_ div div .logo-alpina .list-contact {
         padding-left: 10px !important; 
@@ -238,8 +308,16 @@
 }   
 /* propiedades | page */
 @media screen and (max-width: 768px) {
-    main .tarjeta_container .div-card .carta .color-card {
-        width: 220px;
+    main .tarjeta_container {
+        .carru-prop {
+            height: 580px;
+            div div img {
+                height: 580px;
+            }
+        }
+        .div-card .carta .color-card {
+            width: 220px;
+        }
     }
 }
 @media screen and (max-width: 632px) {
@@ -252,16 +330,34 @@
             font-size: 15px;
         }
     }
+    main .tarjeta_container .carta-hor .carta div {
+        .carta-text {
+            width: 400px;
+            h5 { font-size: 30px; }
+            p { font-size: 15px; }
+            a { font-size: 15px; }
+        }
+    }
 }
 @media screen and (max-width: 556px) {
-    main .tarjeta_container{
-        padding-top: 70px;
+    main .tarjeta_container .fondo-prop {
+        height: 650px;
+        .clase-search { 
+            width: 250px;
+        }
     }
-    main .tarjeta_container .fondo-prop .clase-search {
-        width: 250px;
+    main .tarjeta_container {
+        .carru-prop {
+            width: 100vw;
+            height: 380px;
+            div div img {
+                width: 100vw;
+                height: 380px;
+            }
+        }
     }
     main .tarjeta_container .div-card .carta .color-card {
-        width: 140px;
+        width: 160px;
         img {
             height: 170px;
         }
@@ -275,6 +371,33 @@
             div a {
                 font-size: 12px;
             }
+        }
+    }
+}
+@media screen and (max-width: 433px){
+    main .tarjeta_container .prop-tit {
+        font-size: 50px;
+    }
+    main .tarjeta_container .carta-hor .carta div {
+        .carta-text {
+            width: 380px;
+            p { font-size: 15px; }
+        }
+    }
+}
+@media screen and (max-width: 407px){
+    main .tarjeta_container .div-card .carta .color-card {
+        width: 150px;
+    }
+    main .tarjeta_container .carta-hor .carta div {
+        .carta-text {
+            width: 325px;
+            padding-left: 0;
+            h5 { 
+                font-size: 25px; 
+            }
+            p { font-size: 10px; }
+        
         }
     }
 }

@@ -1,35 +1,45 @@
-/*? --- CONTACTO | page ---*/
+    /*? --- CONTACTO | page ---*/
 main {
     .contacto_ {
         padding-top: 110px;
         .logo-alpina{
             .list-contact {
-                color: rgba(245, 245, 245, 0.816);
+                color: $color-2;
                 font-size: 20px;
                 font-weight: 100;
                 list-style: none;
                 a {
                     text-decoration: none;
-                    color: rgba(245, 245, 245, 0.816);
+                    color: rgba(0, 0, 0, 0.633);
                     font-size: 25px;
                     font-weight: 100;
+                    padding-left: 10px;
                     strong {
-                        color: rgb(79, 87, 79);
+                        color: $color-4;
                     }
                 }
             }
             h2 {
-                color: rgba(245, 245, 245, 0.816);
+                color: rgba(0, 0, 0, 0.682);
                 font-size: 40px;
                 padding-left: 2rem;
                 padding-bottom: 0%;
             }
         }
+        hr {
+            display: none;
+            width: 60%;
+            height: 1px;
+            color: rgba(0, 0, 0, 0.685);
+            margin: auto;
+        }
         .posicion {
             padding: 20px;
+            border-left: 1px solid rgba(0, 0, 0, 0.301);
+            padding-left: 40px;
             h3 {
                 text-align: start;
-                color: rgba(245, 245, 245, 0.816);
+                color: $color-4;
                 font-size: 30px;
                 font-weight: 400;
             }
