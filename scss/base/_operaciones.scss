@@ -14,26 +14,24 @@
         color: $color-1;
     }
 }
-
-/*Senti q todavia no le pude sacar bien el jugo al condicional */
-
 //Animaciones
 main .buscador .buscador_title {
+// INDEX
     #difum-title {
         animation: caida-tit, difum-tit;
         animation-duration: 2.5s;
+        animation-delay: 0.5s;
         animation-timing-function: linear;
         animation-fill-mode: both;
     }
     p {
         animation: difum-tit ;
         animation-duration: 2.5s;
-        animation-delay: 0.7s;
+        animation-delay: 1s;
         animation-timing-function:linear;
         animation-fill-mode: both;
     }
 }
-
 @keyframes caida-tit {
     from {
         transform: translateY(0px);
@@ -43,16 +41,91 @@ main .buscador .buscador_title {
     }
 }
 @keyframes difum-tit {
-    0% {
-        opacity: 0;
+    0% { opacity: 0; }
+    50% { opacity: 0.3; }
+    75% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+main .tarjeta_container #titulo-scroll {
+    animation: difum-tit linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 500px;
+}
+main .tarjeta_container .propiedad_ {
+    animation: aparecer 1.5s linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 700px;
+}
+main .separador{
+    animation: difum-tit linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+}
+main .video-empresa {
+    animation: difum-tit linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0; 
+        translate: 0 50px;
+        scale: 0.8;
     }
-    50% {
-        opacity: 0.3;
+    to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
     }
-    75% {
-        opacity: 0.7;
+}
+//PROPIEDADES   
+main .tarjeta_container {
+    .carta, .carru-prop, .tit-prop2, .carta-hor {
+        animation: aparecer2 linear both;
+        animation-timeline: view();
+        animation-range: entry 7% cover 50%;
     }
-    100% {
+}
+@keyframes aparecer2 {
+    from {
+        opacity: 0.6; 
+    }
+    to {
         opacity: 1;
     }
 }
+//OFICINAS
+main .oficina-container {
+    div, .list_ofi {
+        animation: aparecer 1s linear both;
+
+    }
+}
+//CONTACTO
+main .contacto_ {
+    .logo-alpina {
+        animation: contact 1.3s linear both;
+    }
+    .posicion {
+        animation: contact 1.3s linear both reverse;
+    }
+}
+@keyframes contact {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(70px);
+    }
+}
+//EMPRESA
+main .empresa_ {
+    .carru_img {
+        animation: difum-tit 1.5s linear both;
+    }
+    .text_empresa {
+        animation: contact 1.5s linear both reverse;
+    }
+}
+
+

@@ -1,5 +1,17 @@
 /* Index */
-
+@media screen and (max-width: 500px){
+    header .color-menu {
+        position:static;
+        margin: 0%;
+        .color-item{
+            a {
+                &:hover{
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
 //Titulo
 @media screen and (max-width: 642px) {
     main .buscador .buscador_title {
@@ -71,8 +83,8 @@
     main .tarjeta_container .propiedad_ .propiedad_foto {
         margin-top: 20px;
         img {
-            width: 330px;
-            height: 350px;  
+            width: 320px;
+            height: 320px;  
         }
     }
 }
@@ -80,7 +92,7 @@
     main .tarjeta_container .propiedad_ .propiedad_foto {
         img {
             width: 290px;
-            height: 330px;  
+            height: 290px;  
         }
     }
 }
@@ -157,11 +169,7 @@
         }
     }
     main .video-empresa .texto_contenedor a {
-        font-size: 30px;
-        &:hover {
-            font-size: 35px;
-            color: #def8fc;
-        }
+        font-size: 40px;
     }
 }
 /* footer */
@@ -171,7 +179,7 @@
         width: 250px;
     }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 431px) {
     footer div div iframe {
         height: 200px;
         width: 310px;
@@ -242,7 +250,7 @@
 }
 @media screen and (max-width: 490px){
     main .empresa_  {
-        padding-top: 70px;
+        padding-top: 40px;
         .carru_img {
             width: 450px;
             height: 400px;
@@ -278,8 +286,19 @@
     }
 }
 @media screen and (max-width: 473px) {
-    main .contacto_ div div .logo-alpina .list-contact {
-        padding-left: 10px !important; 
+    main .contacto_ {
+        padding-top: 40px;
+        div div{
+            .logo-alpina {
+                animation: none;
+                .list-contact {
+                    padding-left: 10px !important; 
+                }
+            }
+            .posicion {
+                animation: none;
+            }
+        }
     }
     main .contacto_ div div .logo-alpina .list-contact li a {
         font-size: 18px;
@@ -291,8 +310,11 @@
 }
 /* oficinas | page */
 @media screen and (max-width: 770px) {
-    main .oficina-container .oficina_3, .oficina_4, .oficina_6 {
-        display: none;
+    main .oficina-container {
+        padding-top: 40px;
+        .oficina_3, .oficina_4, .oficina_6 {
+            display: none;
+        }
     }
     main .oficina-container .list_ofi ul li {
         i { font-size: 16px;}
@@ -375,8 +397,13 @@
     }
 }
 @media screen and (max-width: 433px){
-    main .tarjeta_container .prop-tit {
-        font-size: 50px;
+    main .tarjeta_container {
+        .carta, .carru-prop, .tit-prop2, .carta-hor {
+            animation: none;
+        }
+        .prop-tit {
+            font-size: 50px;
+        }
     }
     main .tarjeta_container .carta-hor .carta div {
         .carta-text {

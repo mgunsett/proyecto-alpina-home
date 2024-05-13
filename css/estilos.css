@@ -25,7 +25,7 @@ header .color-menu {
     background-color: rgba(0, 0, 0, 0.885); }
     header .color-menu .color-item .color-sub li a:hover {
       background-color: rgba(0, 0, 0, 0.885);
-      font-size: 17px;
+      scale: 1.1;
       padding-left: 30px; }
   header .color-menu .color-item a {
     font-weight: 400;
@@ -144,8 +144,7 @@ footer {
           font-size: 26px;
           transition: all 0.3s; }
           footer .list_redes ul li i:hover {
-            color: #ffffff;
-            font-size: 28px; }
+            color: #ffffff; }
   footer .final {
     /*  Txto final  */
     color: white;
@@ -157,17 +156,17 @@ footer {
       font-size: 25px;
       color: #e0b158; }
 
-/*Senti q todavia no le pude sacar bien el jugo al condicional */
 main .buscador .buscador_title #difum-title {
   animation: caida-tit, difum-tit;
   animation-duration: 2.5s;
+  animation-delay: 0.5s;
   animation-timing-function: linear;
   animation-fill-mode: both; }
 
 main .buscador .buscador_title p {
   animation: difum-tit;
   animation-duration: 2.5s;
-  animation-delay: 0.7s;
+  animation-delay: 1s;
   animation-timing-function: linear;
   animation-fill-mode: both; }
 
@@ -186,6 +185,68 @@ main .buscador .buscador_title p {
     opacity: 0.7; }
   100% {
     opacity: 1; } }
+
+main .tarjeta_container #titulo-scroll {
+  animation: difum-tit linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 500px; }
+
+main .tarjeta_container .propiedad_ {
+  animation: aparecer 1.5s linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 700px; }
+
+main .separador {
+  animation: difum-tit linear both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 30%; }
+
+main .video-empresa {
+  animation: difum-tit linear both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 30%; }
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+    scale: 0.8; }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1; } }
+
+main .tarjeta_container .carta, main .tarjeta_container .carru-prop, main .tarjeta_container .tit-prop2, main .tarjeta_container .carta-hor {
+  animation: aparecer2 linear both;
+  animation-timeline: view();
+  animation-range: entry 7% cover 50%; }
+
+@keyframes aparecer2 {
+  from {
+    opacity: 0.6; }
+  to {
+    opacity: 1; } }
+
+main .oficina-container div, main .oficina-container .list_ofi {
+  animation: aparecer 1s linear both; }
+
+main .contacto_ .logo-alpina {
+  animation: contact 1.3s linear both; }
+
+main .contacto_ .posicion {
+  animation: contact 1.3s linear both reverse; }
+
+@keyframes contact {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(70px); } }
+
+main .empresa_ .carru_img {
+  animation: difum-tit 1.5s linear both; }
+
+main .empresa_ .text_empresa {
+  animation: contact 1.5s linear both reverse; }
 
 /*!----- MAIN | SECTION -----*/
 main {
@@ -549,6 +610,13 @@ main {
           color: white; }
 
 /* Index */
+@media screen and (max-width: 500px) {
+  header .color-menu {
+    position: static;
+    margin: 0%; }
+    header .color-menu .color-item a:hover {
+      padding-left: 30px; } }
+
 @media screen and (max-width: 642px) {
   main .buscador .buscador_title a {
     font-size: 150px; }
@@ -598,13 +666,13 @@ main {
   main .tarjeta_container .propiedad_ .propiedad_foto {
     margin-top: 20px; }
     main .tarjeta_container .propiedad_ .propiedad_foto img {
-      width: 330px;
-      height: 350px; } }
+      width: 320px;
+      height: 320px; } }
 
 @media screen and (max-width: 380px) {
   main .tarjeta_container .propiedad_ .propiedad_foto img {
     width: 290px;
-    height: 330px; } }
+    height: 290px; } }
 
 /* video page */
 @media screen and (max-width: 1456px) {
@@ -665,10 +733,7 @@ main {
     main .video-empresa .texto_contenedor p {
       font-size: 18px; }
   main .video-empresa .texto_contenedor a {
-    font-size: 30px; }
-    main .video-empresa .texto_contenedor a:hover {
-      font-size: 35px;
-      color: #def8fc; } }
+    font-size: 40px; } }
 
 /* footer */
 @media screen and (max-width: 1250px) {
@@ -676,7 +741,7 @@ main {
     height: 200px;
     width: 250px; } }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 431px) {
   footer div div iframe {
     height: 200px;
     width: 310px; }
@@ -728,7 +793,7 @@ main {
 
 @media screen and (max-width: 490px) {
   main .empresa_ {
-    padding-top: 70px; }
+    padding-top: 40px; }
     main .empresa_ .carru_img {
       width: 450px;
       height: 400px; }
@@ -754,8 +819,14 @@ main {
     margin-top: 10px; } }
 
 @media screen and (max-width: 473px) {
-  main .contacto_ div div .logo-alpina .list-contact {
-    padding-left: 10px !important; }
+  main .contacto_ {
+    padding-top: 40px; }
+    main .contacto_ div div .logo-alpina {
+      animation: none; }
+      main .contacto_ div div .logo-alpina .list-contact {
+        padding-left: 10px !important; }
+    main .contacto_ div div .posicion {
+      animation: none; }
   main .contacto_ div div .logo-alpina .list-contact li a {
     font-size: 18px;
     padding-left: 3px; }
@@ -764,8 +835,10 @@ main {
 
 /* oficinas | page */
 @media screen and (max-width: 770px) {
-  main .oficina-container .oficina_3, .oficina_4, .oficina_6 {
-    display: none; }
+  main .oficina-container {
+    padding-top: 40px; }
+    main .oficina-container .oficina_3, main .oficina-container .oficina_4, main .oficina-container .oficina_6 {
+      display: none; }
   main .oficina-container .list_ofi ul li i {
     font-size: 16px; }
   main .oficina-container .list_ofi ul li a {
@@ -824,6 +897,8 @@ main {
       font-size: 12px; } }
 
 @media screen and (max-width: 433px) {
+  main .tarjeta_container .carta, main .tarjeta_container .carru-prop, main .tarjeta_container .tit-prop2, main .tarjeta_container .carta-hor {
+    animation: none; }
   main .tarjeta_container .prop-tit {
     font-size: 50px; }
   main .tarjeta_container .carta-hor .carta div .carta-text {
