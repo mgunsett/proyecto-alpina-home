@@ -274,8 +274,18 @@
     }
 }
 /* contacto | page */
+@media screen and (max-width: 1999px) {
+    main .contacto_ div div {
+        .logo-alpina {
+            padding-right: 40px;
+        }
+    }
+}
 @media screen and (max-width: 767px) {
     main .contacto_ div div{
+        .logo-alpina {
+            padding-right: 20px;
+        }
         hr {
             display: inline-block;
         }
