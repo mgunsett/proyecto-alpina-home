@@ -14,27 +14,30 @@ main .tarjeta_container h1, main .separador h1 {
 
 /*!-----HEADER-----*/
 header .color-menu {
-  background: rgba(0, 0, 0, 0.885);
-  margin-bottom: 25px; }
+  background: rgba(0, 0, 0, 0.312);
+  margin-bottom: 25px;
+  backdrop-filter: blur(3px); }
   header .color-menu .color-icon {
     box-shadow: none; }
   header .color-menu button i {
     font-size: 30px;
     color: #aed7b4; }
   header .color-menu .color-item .color-sub {
-    background-color: rgba(0, 0, 0, 0.885); }
+    background-color: rgba(0, 0, 0, 0.312);
+    backdrop-filter: blur(3px); }
     header .color-menu .color-item .color-sub li a:hover {
-      background-color: rgba(0, 0, 0, 0.885);
+      background-color: rgba(0, 0, 0, 0.395);
+      backdrop-filter: blur(3px);
       scale: 1.1;
       padding-left: 30px; }
   header .color-menu .color-item a {
     font-weight: 400;
     font-size: 17px;
-    color: #c3e2d4;
+    color: #c3eec3;
     text-decoration: none;
     transition: all 0.7s; }
     header .color-menu .color-item a:hover {
-      scale: 1.2;
+      scale: 1.1;
       color: #cde7db; }
   header .color-menu .color-logo {
     text-decoration: none;
@@ -256,7 +259,7 @@ main {
   /*----- section_VIDEO ------*/ }
   main .buscador {
     height: 810px;
-    background-image: url("../img/fondo-arbol.jpg");
+    background-image: url("../../img/fondo-ultimo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

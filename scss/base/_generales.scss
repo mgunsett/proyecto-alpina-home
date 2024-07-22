@@ -20,8 +20,9 @@ $color-4: rgb(219, 145, 7);
 /*!-----HEADER-----*/
 header{
     .color-menu{
-        background: rgba(0, 0, 0, 0.885);
+        background: rgba(0, 0, 0, 0.312);
         margin-bottom: 25px;
+        backdrop-filter: blur(3px);
         .color-icon {
             box-shadow: none;
         }
@@ -33,10 +34,12 @@ header{
         }
         .color-item{
             .color-sub {
-                background-color: rgba(0, 0, 0, 0.885);
+                background-color:rgba(0, 0, 0, 0.312);
+                backdrop-filter: blur(3px);
                 li a {
                     &:hover {
-                        background-color: rgba(0, 0, 0, 0.885);
+                        background-color:rgba(0, 0, 0, 0.395);
+                        backdrop-filter: blur(3px);
                         scale: 1.1;
                         padding-left: 30px;
                     }
@@ -45,11 +48,11 @@ header{
             a{
                 font-weight: 400;
                 font-size: 17px;
-                color: rgb(195, 226, 212);
+                color: $color-3;
                 text-decoration: none;
                 transition: all 0.7s;
                 &:hover{
-                    scale: 1.2;
+                    scale: 1.1;
                     color: rgb(205, 231, 219);
                 }
             }

@@ -8,7 +8,7 @@
 }
 //Condicional
 @mixin click($click){
-    @if $click== black{
+    @if $click == black{
         color: $color-2;
     }@else {
         color: $color-1;
