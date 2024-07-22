@@ -259,7 +259,7 @@ main {
   /*----- section_VIDEO ------*/ }
   main .buscador {
     height: 810px;
-    background-image: url("../../img/fondo-ultimo.jpg");
+    background-image: url("../img/fondo-ultimo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
