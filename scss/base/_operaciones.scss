@@ -24,7 +24,7 @@ main .buscador .buscador_title {
         animation-timing-function: linear;
         animation-fill-mode: both;
     }
-    p {
+    .sub_tit {
         animation: difum-tit ;
         animation-duration: 2.5s;
         animation-delay: 1s;
@@ -37,7 +37,7 @@ main .buscador .buscador_title {
         transform: translateY(0px);
     }
     to {
-        transform: translateY(100px);
+        transform: translateY(70px);
     }
 }
 @keyframes difum-tit {

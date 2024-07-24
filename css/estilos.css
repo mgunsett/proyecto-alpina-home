@@ -9,7 +9,7 @@
 main .tarjeta_container h1, main .separador h1 {
   font-size: 50px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.921);
+  color: rgba(183, 241, 206, 0.899);
   font-weight: 600; }
 
 /*!-----HEADER-----*/
@@ -166,7 +166,7 @@ main .buscador .buscador_title #difum-title {
   animation-timing-function: linear;
   animation-fill-mode: both; }
 
-main .buscador .buscador_title p {
+main .buscador .buscador_title .sub_tit {
   animation: difum-tit;
   animation-duration: 2.5s;
   animation-delay: 1s;
@@ -177,7 +177,7 @@ main .buscador .buscador_title p {
   from {
     transform: translateY(0px); }
   to {
-    transform: translateY(100px); } }
+    transform: translateY(70px); } }
 
 @keyframes difum-tit {
   0% {
@@ -253,44 +253,55 @@ main .empresa_ .text_empresa {
 
 /*!----- MAIN | SECTION -----*/
 main {
-  background: #fcfcfc;
+  background: rgba(0, 0, 0, 0.896);
   padding-bottom: 60px;
   /*--- section_TARJETAS ---*/
   /*----- section_VIDEO ------*/ }
   main .buscador {
     height: 810px;
-    background-image: url("../../img/fondo-ultimo.jpg");
+    background-image: url("../img/fondo-ultimo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; }
+    background-attachment: fixed;
+    mask-image: linear-gradient(black 90%, transparent); }
     main .buscador .buscador_title {
       display: flex;
-      justify-content: center;
       flex-direction: column;
+      justify-content: center;
+      align-items: start;
       flex-wrap: wrap;
-      align-items: center;
-      position: relative;
-      padding-top: 8%; }
+      padding-left: 5%;
+      padding-top: 10%; }
+      main .buscador .buscador_title .sub_tit {
+        color: #db9107;
+        font-size: 90px;
+        top: 27%;
+        position: absolute;
+        left: 7%;
+        opacity: 0;
+        transition: opacity 0.7s linear 0.8s; }
       main .buscador .buscador_title a {
         text-decoration: none;
         color: #a9c7b6;
-        text-align: center;
         font-size: 200px;
         font-weight: 600; }
-      main .buscador .buscador_title p {
-        text-align: center;
-        color: #db9107;
-        font-size: 90px;
+      main .buscador .buscador_title .entrada p {
+        color: #c3eec3;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      main .buscador .buscador_title .boton_index {
         position: absolute;
-        left: 45%;
-        top: 73%;
-        opacity: 0;
-        transition: opacity 0.7s linear 0.8s; }
+        top: 58%; }
+  main .subrayado {
+    color: #6da73d;
+    width: 80px;
+    height: 4px;
+    margin: auto; }
   main .tarjeta_container {
     padding-bottom: 40px; }
     main .tarjeta_container h1 {
-      padding: 30px; }
+      padding-top: 5%; }
     main .tarjeta_container .propiedad_ {
       display: flex;
       justify-content: space-evenly;
@@ -305,13 +316,10 @@ main {
         flex-direction: column;
         flex-wrap: wrap;
         padding-bottom: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.571);
-        border-bottom-right-radius: 50px;
-        border-top-left-radius: 50px; }
+        border: 0.5px solid rgba(218, 250, 226, 0.458); }
         main .tarjeta_container .propiedad_ .propiedad_foto img {
-          width: 400px;
-          height: 460px;
-          border-top-left-radius: 50px;
+          width: 380px;
+          height: 430px;
           object-view-box: inset(0% 0% 0% 0%);
           transition: all 0.9s; }
           main .tarjeta_container .propiedad_ .propiedad_foto img:hover {
@@ -324,7 +332,7 @@ main {
           margin: 10px;
           font-size: 30px;
           font-weight: 400;
-          color: rgba(0, 0, 0, 0.937); }
+          color: rgba(218, 250, 226, 0.937); }
         main .tarjeta_container .propiedad_ .propiedad_foto .ubication {
           display: flex;
           flex-direction: row;
@@ -342,7 +350,7 @@ main {
             font-size: 20px;
             padding: 5px;
             text-align: left;
-            color: rgba(0, 0, 0, 0.689); }
+            color: rgba(218, 250, 226, 0.937); }
         main .tarjeta_container .propiedad_ .propiedad_foto a {
           text-decoration: none;
           font-size: 20px;
@@ -350,20 +358,15 @@ main {
           color: #ffc107;
           padding: 12px;
           border-radius: 5px 5px;
-          transition: all 0.9s; }
+          padding-left: 80px;
+          padding-right: 80px;
+          margin-bottom: 10px;
+          transition: all 0.8s; }
           main .tarjeta_container .propiedad_ .propiedad_foto a:hover {
-            padding-left: 80px;
-            padding-right: 80px; }
-          main .tarjeta_container .propiedad_ .propiedad_foto a:active {
             background-color: #ffc107;
             color: black; }
   main .separador {
     padding: 15px; }
-    main .separador hr {
-      color: #6da73d;
-      width: 80px;
-      height: 4px;
-      margin: auto; }
   main .video-empresa {
     display: flex;
     justify-content: space-between;
@@ -379,7 +382,8 @@ main {
       main .video-empresa .texto_contenedor p {
         font-size: 27px;
         font-weight: 100;
-        padding-top: 15px; }
+        padding-top: 15px;
+        color: rgba(220, 236, 224, 0.937); }
         main .video-empresa .texto_contenedor p strong {
           color: #6da73d; }
       main .video-empresa .texto_contenedor a {
@@ -513,21 +517,24 @@ main .oficina-container {
           color: #1c231d; }
 
 main {
-  margin-top: 0px; }
+  margin-top: 0px;
+  background: rgba(0, 0, 0, 0.896); }
   main .tarjeta_container .prop-tit {
     color: #c3eec3;
-    font-size: 70px; }
+    font-size: 70px;
+    letter-spacing: 7px; }
   main .tarjeta_container .fondo-prop {
     height: 600px;
-    background-image: url("../img/fondo-mad.jpg");
-    background-repeat: repeat;
-    background-size: contain;
+    background-image: url("../../img/img_22-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    mask-image: linear-gradient(black 90%, transparent); }
     main .tarjeta_container .fondo-prop .clase-search {
       width: 400px;
       transition: all 0.9s; }
