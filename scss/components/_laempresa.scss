@@ -17,6 +17,11 @@ main {
             }
             p {
                 font-size: 22px;
+                font-weight: 100;
+                color: white;
+                strong{
+                    color: $color-3;
+                }
             }
             hr {
                 width: 70%;

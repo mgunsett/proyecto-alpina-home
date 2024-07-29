@@ -51,13 +51,14 @@ main {
                         text-decoration: none;
                         margin-right: 10px;
                         font-size: 20px; 
+                        color: $color-4;
                     }
                     a {
-                        color: $color-4;
+                        color: rgba(255, 255, 255, 0.94);
                         text-decoration: none;
                         font-size: 20px;
                         strong {
-                            color: rgb(28, 35, 29);
+                            color: $color-3;
                         }
                     }
                 }

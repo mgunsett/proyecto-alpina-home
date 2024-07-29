@@ -10,16 +10,17 @@ main {
                 list-style: none;
                 a {
                     text-decoration: none;
-                    color: rgba(0, 0, 0, 0.633);
+                    color:rgba(255, 255, 255, 0.901);
                     font-size: 25px;
                     font-weight: 100;
+                    padding-left: 17px;
                     strong {
                         color: $color-4;
                     }
                 }
             }
             h2 {
-                color: rgba(0, 0, 0, 0.682);
+                color: $color-3;
                 font-size: 40px;
                 padding-left: 2rem;
                 padding-bottom: 0%;
@@ -29,18 +30,21 @@ main {
             display: none;
             width: 60%;
             height: 1px;
-            color: rgba(0, 0, 0, 0.685);
+            color: white;
             margin: auto;
         }
         .posicion {
             padding: 20px;
-            border-left: 1px solid rgba(0, 0, 0, 0.301);
+            border-left: 1px solid rgba(255, 255, 255, 0.301);
             padding-left: 40px;
             h3 {
                 text-align: start;
                 color: $color-4;
                 font-size: 30px;
                 font-weight: 400;
+            }
+            label{
+                color:rgba(255, 255, 255, 0.901) ;
             }
         }
     }

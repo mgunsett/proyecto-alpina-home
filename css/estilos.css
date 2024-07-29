@@ -23,11 +23,10 @@ header .color-menu {
     font-size: 30px;
     color: #aed7b4; }
   header .color-menu .color-item .color-sub {
-    background-color: rgba(0, 0, 0, 0.312);
-    backdrop-filter: blur(3px); }
+    backdrop-filter: blur(3px) !important;
+    background-color: rgba(0, 0, 0, 0.312); }
     header .color-menu .color-item .color-sub li a:hover {
       background-color: rgba(0, 0, 0, 0.395);
-      backdrop-filter: blur(3px);
       scale: 1.1;
       padding-left: 30px; }
   header .color-menu .color-item a {
@@ -55,7 +54,7 @@ header .color-menu {
 
 .separador_ {
   background: #c3eec3;
-  height: 10px; }
+  height: 1px; }
 
 /*!--- FOOTER | section --- */
 footer {
@@ -74,7 +73,7 @@ footer {
     justify-content: space-evenly;
     align-items: center; }
     footer .fieldset p {
-      color: #6da73d;
+      color: rgba(97, 147, 56, 0.652);
       font-size: 25px;
       text-align: center; }
     footer .fieldset input {
@@ -85,13 +84,13 @@ footer {
       font-size: 18px; }
     footer .fieldset .boton-col {
       border-radius: 5px;
-      color: #6da73d;
+      color: rgba(97, 147, 56, 0.652);
       padding: 10px; }
   footer .list_container2 {
     /* web site */
     width: 200px; }
     footer .list_container2 h3 {
-      color: #6da73d;
+      color: rgba(97, 147, 56, 0.652);
       font-size: 25px;
       font-weight: 100; }
     footer .list_container2 ul {
@@ -112,7 +111,7 @@ footer {
     /* Contactanos */
     width: 350px; }
     footer .list_container h3 {
-      color: #6da73d;
+      color: rgba(97, 147, 56, 0.652);
       font-size: 25px;
       font-weight: 100; }
     footer .list_container ul {
@@ -133,7 +132,7 @@ footer {
   footer .list_redes {
     /* Redes */ }
     footer .list_redes h3 {
-      color: #6da73d;
+      color: rgba(97, 147, 56, 0.652);
       font-size: 25px;
       font-weight: 100; }
     footer .list_redes ul {
@@ -342,7 +341,7 @@ main {
           margin: 2px; }
           main .tarjeta_container .propiedad_ .propiedad_foto .ubication i {
             font-size: 20px;
-            color: #6da73d;
+            color: rgba(97, 147, 56, 0.652);
             padding: 5px;
             text-align: left;
             margin: auto; }
@@ -385,11 +384,11 @@ main {
         padding-top: 15px;
         color: rgba(220, 236, 224, 0.937); }
         main .video-empresa .texto_contenedor p strong {
-          color: #6da73d; }
+          color: rgba(97, 147, 56, 0.652); }
       main .video-empresa .texto_contenedor a {
         font-family: "Reenie Beanie", cursive;
         text-decoration: none;
-        color: #6da73d;
+        color: rgba(97, 147, 56, 0.652);
         font-size: 40px;
         padding: 2px; }
         main .video-empresa .texto_contenedor a i {
@@ -399,7 +398,7 @@ main {
           opacity: 1; }
       main .video-empresa .texto_contenedor hr {
         width: 70%;
-        color: #6da73d; }
+        color: rgba(97, 147, 56, 0.652); }
 
 /*? --- LAEMPRESA | page ---*/
 main .empresa_ {
@@ -416,7 +415,11 @@ main .empresa_ {
       color: #c3eec3;
       font-size: 60px; }
     main .empresa_ .text_empresa p {
-      font-size: 22px; }
+      font-size: 22px;
+      font-weight: 100;
+      color: white; }
+      main .empresa_ .text_empresa p strong {
+        color: #c3eec3; }
     main .empresa_ .text_empresa hr {
       width: 70%;
       height: 1px;
@@ -432,13 +435,14 @@ main .contacto_ {
     list-style: none; }
     main .contacto_ .logo-alpina .list-contact a {
       text-decoration: none;
-      color: rgba(0, 0, 0, 0.633);
+      color: rgba(255, 255, 255, 0.901);
       font-size: 25px;
-      font-weight: 100; }
+      font-weight: 100;
+      padding-left: 17px; }
       main .contacto_ .logo-alpina .list-contact a strong {
         color: #db9107; }
   main .contacto_ .logo-alpina h2 {
-    color: rgba(0, 0, 0, 0.682);
+    color: #c3eec3;
     font-size: 40px;
     padding-left: 2rem;
     padding-bottom: 0%; }
@@ -446,17 +450,19 @@ main .contacto_ {
     display: none;
     width: 60%;
     height: 1px;
-    color: rgba(0, 0, 0, 0.685);
+    color: white;
     margin: auto; }
   main .contacto_ .posicion {
     padding: 20px;
-    border-left: 1px solid rgba(0, 0, 0, 0.301);
+    border-left: 1px solid rgba(255, 255, 255, 0.301);
     padding-left: 40px; }
     main .contacto_ .posicion h3 {
       text-align: start;
       color: #db9107;
       font-size: 30px;
       font-weight: 400; }
+    main .contacto_ .posicion label {
+      color: rgba(255, 255, 255, 0.901); }
 
 /*? --- OFICINAS | page ---*/
 main .oficina-container {
@@ -508,13 +514,14 @@ main .oficina-container {
       main .oficina-container .list_ofi ul li i {
         text-decoration: none;
         margin-right: 10px;
-        font-size: 20px; }
+        font-size: 20px;
+        color: #db9107; }
       main .oficina-container .list_ofi ul li a {
-        color: #db9107;
+        color: rgba(255, 255, 255, 0.94);
         text-decoration: none;
         font-size: 20px; }
         main .oficina-container .list_ofi ul li a strong {
-          color: #1c231d; }
+          color: #c3eec3; }
 
 main {
   margin-top: 0px;
@@ -563,10 +570,10 @@ main {
     margin: auto;
     margin-bottom: 30px;
     width: 90vw;
-    height: 680px; }
+    height: 720px; }
     main .tarjeta_container .carru-prop div div img {
       width: 90vw;
-      height: 680px; }
+      height: 720px; }
     main .tarjeta_container .carru-prop div div h5 {
       color: #c3eec3;
       font-size: 25px; }

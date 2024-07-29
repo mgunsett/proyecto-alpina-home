@@ -6,7 +6,7 @@
 }
 // List
 $bg-main: rgba(0, 0, 0, 0.896);
-$color-1: rgb(109, 167, 61);
+$color-1: rgba(97, 147, 56, 0.652);
 $color-2: rgba(104, 174, 121, 0.54);
 $color-3: rgb(195, 238, 195);
 $color-4: rgb(219, 145, 7);
@@ -34,12 +34,11 @@ header{
         }
         .color-item{
             .color-sub {
+                backdrop-filter: blur(3px)!important;
                 background-color:rgba(0, 0, 0, 0.312);
-                backdrop-filter: blur(3px);
-                li a {
+                li  a {
                     &:hover {
                         background-color:rgba(0, 0, 0, 0.395);
-                        backdrop-filter: blur(3px);
                         scale: 1.1;
                         padding-left: 30px;
                     }
@@ -77,7 +76,7 @@ header{
 }
 .separador_{
     background:  rgb(195, 238, 195);
-    height: 10px;  
+    height: 1px;  
 }
 /*!--- FOOTER | section --- */
 footer {
